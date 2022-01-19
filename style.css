@@ -12,7 +12,7 @@
 .btn{
     padding: 10px 15px;
     width: 80px;
-    background: rgb(0, 162, 255);
+    background: #6e56c4;
     font-size: 18px;
     font-family: "Open Sans", sans-serif;
     border-radius: 5px;
@@ -23,4 +23,8 @@
   }
   .btn:active{
       transform: scale(0.90);
+  }
+  header{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 83px;
   }
