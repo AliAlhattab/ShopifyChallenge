@@ -14,7 +14,6 @@
     display: grid;
     grid-template-rows: 0.1fr 0.1fr 0.1fr;
     margin-bottom: 20px;
-    
 }
 
 .btn{
@@ -30,9 +29,11 @@
     cursor: pointer;
     margin-left: 210px;
   }
+
   .btn:active{
       transform: scale(0.90);
   }
+
   header{
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 83px;
@@ -40,12 +41,14 @@
       color: white;
       outline-color: 5px solid blue;
   }
+
 body{
     background-image: url("Space-HD.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
    
 }
+
 #intro{
     color:white;
     font-size: 20px;
@@ -70,17 +73,16 @@ body{
     }
     
     @keyframes spin {
-    from{
-    transform: rotate(0deg);
-    }to{
-    transform: rotate(360deg);
-    }
+        from{
+            transform: rotate(0deg);
+        }to{
+            transform: rotate(360deg);
+        }
     }
     
     #overlay{
     height:100%;
     width:100%;
-    position:fixed;
     left:0;
     top:0;
     }

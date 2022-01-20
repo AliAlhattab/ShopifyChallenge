@@ -18,10 +18,8 @@ function fetchSpacePhoto(){
           return `
             <div class="info1">
                 <p><img style="width: 500px;"src="https://api.nasa.gov/EPIC/archive/natural/${year}/${month}/${day}/png/${data.image}.png?api_key=RzuJuaNCpoiAXpt5HRDYfZj49dxsVJMFQsbWNE1s" alt="${"Image"}"/></p>
-               
                 <p>${data.date}</p>
                 <p>${data.caption}</p>
-                
                 <button class="btn" onclick="toggleLike(this)">Like</button>
             </div>
            `
@@ -30,9 +28,9 @@ function fetchSpacePhoto(){
        //append space photo html to page
        document.querySelector("#nasa").insertAdjacentHTML("afterbegin", html);
    
-       var myobj = document.querySelector("#imageLoadSpinner");
-       myobj.remove();
-       
+        var myobj = document.querySelector("#imageLoadSpinner");
+    myobj.remove();
+
     }); 
 
    
@@ -46,7 +44,5 @@ function toggleLike(info) {
         info.innerHTML = "Like"
     }
 }
-
-
 
 fetchSpacePhoto();
