@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
 
 .info1{
-    background-color: #ddd;
+    background-image: url("spacejpg.jpg");
     padding: 1rem;
-    margin-bottom: 1rem;
     width: 500px;
-    border: grey solid 1px;
     text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    margin-bottom: 20px;
+    
 }
 
 .btn{
@@ -20,6 +28,7 @@
     outline: none;
     border: none;
     cursor: pointer;
+    margin-left: 210px;
   }
   .btn:active{
       transform: scale(0.90);
@@ -27,4 +36,51 @@
   header{
       font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 83px;
+      text-align: center;
+      color: white;
+      outline-color: 5px solid blue;
   }
+body{
+    background-image: url("Space-HD.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+#intro{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.spinner{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #808080;
+    border-radius: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    animation: spin 2s infinite linear;
+    animation-duration: 2s;
+    
+    }
+    
+    @keyframes spin {
+    from{
+    transform: rotate(0deg);
+    }to{
+    transform: rotate(360deg);
+    }
+    }
+    
+    #overlay{
+    height:100%;
+    width:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    }
